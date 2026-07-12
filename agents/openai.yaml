@@ -1,4 +1,4 @@
 interface:
   display_name: "Chinese Prose Style"
   short_description: "Keep Chinese prose focused, sourced, and final-facing"
-  default_prompt: "Use $chinese-prose-style to edit this Chinese text for source fidelity, thematic coherence, evidence boundaries, and final-facing prose; split independent arguments instead of forcing transitions."
+  default_prompt: "Use $chinese-prose-style to edit this Chinese text for source fidelity, thematic coherence, evidence boundaries, and final-facing prose; preserve evidence-backed side arguments as separate artifacts instead of forcing transitions or deleting them."
