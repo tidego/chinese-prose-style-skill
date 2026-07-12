@@ -1,6 +1,6 @@
 ---
 name: chinese-prose-style
-description: Write or edit source-faithful Chinese prose without formulaic AI cadence or performative pseudo-human voice. Use for Chinese blogs, essays, opinion pieces, product analysis, technical explanations, and other reader-facing text when the draft sounds mechanically polished, falsely colloquial, emotionally staged, or suspiciously personal; prevent invented lived experience, dialogue, scenes, feelings, and rhetorical hooks while preserving the author's verified facts and actual point of view.
+description: Write or edit source-faithful Chinese prose and product copy without formulaic AI cadence, performative pseudo-human voice, or process-focused meta-narration. Use for Chinese blogs, essays, opinion pieces, product analysis, technical explanations, UI copy, and other reader-facing text when the draft sounds mechanically polished, falsely colloquial, emotionally staged, self-referential, or focused on how it was produced rather than its subject; preserve verified facts and the author's actual point of view.
 ---
 
 # Chinese Prose Style
@@ -14,6 +14,10 @@ Give each paragraph one center of gravity. Prefer a sourced action, moment, conf
 Do not confuse specificity with evidence. A time, number, named role, quotation, or first-person example must be traceable to the source; never add such details merely to make a case feel real. A viewpoint is a supported choice or priority, not a stronger tone. Do not manufacture controversy when the evidence is limited.
 
 Make epistemic boundaries visible in research and technical prose. Distinguish verified facts, inferences, and unresolved claims. Narrow or qualify a claim when its evidence is weak. Do not simulate humility with generic caveats, and do not present confident wording as proof that the model knows.
+
+Remove meta-narration from final-facing prose. Do not tell readers how the text was researched, drafted, revised, optimized, or organized. Delete access problems, tool traces, chapter previews, version commentary, and statements about which wording or rule was selected. Keep a process only when the process itself is evidence or the declared subject, such as a methods section, incident chronology, or release note.
+
+For product and UI copy, write from the user's operating context. Name the visible object, current state, available action, or resulting consequence. Do not expose the builder's plan, implementation rationale, demo narration, or the agent's completion report as product language.
 
 Treat symmetry as an editing warning, not a default rhythm. Three-part verb strings, noun stacks separated by `、`, paired abstractions joined by `与`, and repeated `不是 A 而是 B` structures must earn their place.
 
@@ -35,6 +39,8 @@ During the final pass:
 6. Compare neighboring headings and sections for repeated templates or metaphor chains.
 7. Trace concrete examples and authoritative-sounding claims to their sources.
 8. Confirm that the main conclusion has priority and that uncertainty is stated where evidence ends.
-9. Read the text aloud and revise engineered cadence.
+9. Delete sentences whose only job is to explain the drafting process, section order, or inclusion decision.
+10. For product copy, verify that every line belongs inside the product rather than in a developer status report.
+11. Read the text aloud and revise engineered cadence.
 
 Do not blindly replace flagged words, manufacture irregular sentence lengths, or perform humanity with slang and short sentences. Preserve technical accuracy and deliberate rhetoric.

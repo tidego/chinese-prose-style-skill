@@ -1,4 +1,4 @@
 interface:
   display_name: "Chinese Prose Style"
-  short_description: "Write source-faithful Chinese with clear evidence boundaries"
-  default_prompt: "Use $chinese-prose-style to edit this Chinese text for source fidelity, information priority, and explicit evidence boundaries; remove formulaic cadence, invented human voice, and decorative metaphors that replace the actual mechanism."
+  short_description: "Write final-facing Chinese without staged or process-focused prose"
+  default_prompt: "Use $chinese-prose-style to edit this Chinese text or product copy for source fidelity, information priority, and explicit evidence boundaries; remove formulaic cadence, invented human voice, decorative metaphors, and meta-narration about how the artifact was produced."
