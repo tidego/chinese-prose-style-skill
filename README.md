@@ -23,7 +23,11 @@ Use $chinese-prose-style to edit this Chinese article. Preserve verified facts a
 - 排比和对称句是否提供了真实信息；
 - 抽象名词是否省略了行动者和动作；
 - 比喻是否准确对应某个机制，还是只增加结论感；
+- 一个比喻是否被继续拆成整段映射，相邻章节是否重复同一模板；
+- 情绪强度是否来自作者原稿；
 - 口语、反问和短句是否在表演“像真人”。
+
+Skill 不会机械禁用破折号、冒号或某个高频词。单个形式不是证据，反复出现且没有信息作用时才需要修改。
 
 完整的设计背景和研究资料见[中文“AI 味”是怎样被训练出来的？](https://guzhaolin.art/blog/chinese-ai-prose-style)。
 
