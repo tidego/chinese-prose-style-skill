@@ -1,4 +1,4 @@
 interface:
   display_name: "Chinese Prose Style"
-  short_description: "Write final-facing Chinese without staged or process-focused prose"
-  default_prompt: "Use $chinese-prose-style to edit this Chinese text or product copy for source fidelity, information priority, and explicit evidence boundaries; remove formulaic cadence, invented human voice, decorative metaphors, and meta-narration about how the artifact was produced."
+  short_description: "Keep Chinese prose focused, sourced, and final-facing"
+  default_prompt: "Use $chinese-prose-style to edit this Chinese text for source fidelity, thematic coherence, evidence boundaries, and final-facing prose; split independent arguments instead of forcing transitions."
