@@ -13,13 +13,16 @@ npx skills add tidego/chinese-prose-style-skill
 显式调用：
 
 ```text
-Use $chinese-prose-style to edit this Chinese article. Preserve verified facts and remove decorative metaphors.
+Use $chinese-prose-style to edit this Chinese article. Preserve verified facts, prioritize the main claim, state evidence boundaries, and remove decorative metaphors.
 ```
 
 ## What it checks
 
 - 第一人称经历、情绪和场景是否有来源；
 - 假设风险是否被误写成已经发生的事件；
+- 长文是否有明确主张，章节是否按重要性分配篇幅；
+- 具体案例和权威归因是否能追溯到来源；
+- 重要结论是否区分事实、推断和未决问题；
 - 排比和对称句是否提供了真实信息；
 - 抽象名词是否省略了行动者和动作；
 - 比喻是否准确对应某个机制，还是只增加结论感；
