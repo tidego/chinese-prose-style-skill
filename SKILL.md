@@ -1,52 +1,118 @@
 ---
 name: chinese-prose-style
-description: Write or edit source-faithful Chinese prose and product copy without formulaic AI cadence, performative pseudo-human voice, process-focused meta-narration, or topic drift. Use for Chinese blogs, essays, opinion pieces, product analysis, technical explanations, UI copy, and other reader-facing text when the draft sounds mechanically polished, falsely colloquial, emotionally staged, self-referential, fragmented across loosely related concepts, or focused on how it was produced rather than its subject; preserve verified facts and the author's actual point of view.
+description: 面向中文博客、文章、产品分析、技术说明和界面文案的写作与编辑技能。用一套按优先级排列的通用规则，保留可核实事实和作者原有观点，处理主题漂移、对象突变、指代含糊、句间关系缺失、空泛复述、程式化节奏、伪造人味和过程性元叙述；首轮只使用通用规则，反复修改仍失败时才读取案例参考。
 ---
 
-# Chinese Prose Style
+# 中文写作通用规则
 
-Read [references/chinese-prose-style.md](references/chinese-prose-style.md) before drafting or substantially editing reader-facing Chinese prose.
+## 读取顺序
 
-Preserve source fidelity before optimizing style. Use a first-person experience, emotion, scene, dialogue, or personal judgment only when the source establishes it. Mark hypothetical risks as hypothetical. Never invent a merchant, customer, incident, memory, or feeling to make prose seem alive.
+把本文件视为最高优先级的通用规则。第一次写作或编辑时，只使用本文件，不读取案例参考。
 
-Give each paragraph one center of gravity. Prefer a sourced action, moment, conflict, or consequence over a complete-looking inventory. For long-form prose, identify the main claim or decision and give supporting sections unequal weight according to their importance. Completeness is not the objective. When the source lacks personal detail, write plainly and analytically instead of simulating intimacy.
+只有出现以下情况之一，才读取[案例与诊断参考](references/chinese-prose-style.md)：
 
-Give long-form prose one governing question, one primary object, and one main conclusion. Treat every new conceptual object as a cost. Introduce it only when the preceding argument requires it and its relation to the governing question can be stated directly. A shared broad label such as “AI,” “Agent,” or “writing” does not make separate questions part of one argument.
+- 用户已经针对同一写作问题连续否定至少两版。
+- 用户明确要求结合案例、失败模式或研究证据进行诊断。
+- 两条通用原则发生冲突，本文件无法决定取舍。
+- 按本文件完成自检和一次修改后，同一问题仍然复发。
 
-Audit headings as an argument graph before polishing transitions. For every section, state privately what question it answers, what evidence it uses, and why the main conclusion needs it. If two section groups have independent questions, evidence sets, and conclusions, split them instead of using phrases such as “更深一层” or “随之出现” to manufacture continuity. Preserve the user's main article around its original claim. Move evidence-backed independent arguments into a separate draft or article; do not delete them merely to make the main article shorter. Delete only repetition, unsupported filler, superseded material, or content the user has authorized you to discard.
+案例只用于识别失败类型。不要模仿例句，不要把所有案例警告同时施加到一篇文章上，也不要让案例覆盖更高优先级的规则。
 
-Do not confuse specificity with evidence. A time, number, named role, quotation, or first-person example must be traceable to the source; never add such details merely to make a case feel real. A viewpoint is a supported choice or priority, not a stronger tone. Do not manufacture controversy when the evidence is limited.
+## 冲突时的优先级
 
-Make epistemic boundaries visible in research and technical prose. Distinguish verified facts, inferences, and unresolved claims. Narrow or qualify a claim when its evidence is weak. Do not simulate humility with generic caveats, and do not present confident wording as proof that the model knows.
+出现取舍时，按以下顺序决定：
 
-Remove meta-narration from final-facing prose. Do not tell readers how the text was researched, drafted, revised, optimized, or organized. Delete access problems, tool traces, chapter previews, version commentary, and statements about which wording or rule was selected. Keep a process only when the process itself is evidence or the declared subject, such as a methods section, incident chronology, or release note.
+1. 保留用户明确表达的意图、可核实事实、来源边界和作者观点。
+2. 让结论停在证据能够支持的位置。
+3. 维持全文的主问题、主要对象和必要论证路径。
+4. 让行动者、动作、句间关系和对象变化无需猜测。
+5. 要求每句话和每一节提供新信息或必要关系。
+6. 符合用户要求的体裁和已经形成的作者声音。
+7. 最后才处理节奏、篇幅、格式和表面润色。
 
-For product and UI copy, write from the user's operating context. Name the visible object, current state, available action, or resulting consequence. Do not expose the builder's plan, implementation rationale, demo narration, or the agent's completion report as product language.
+不得为了满足低优先级的审美偏好而破坏高优先级原则。用户对事实、立场和表达方式的明确修正，高于模型推测出的风格偏好；但用户没有授权时，不能把缺少证据的说法改成事实。
 
-Treat symmetry as an editing warning, not a default rhythm. Three-part verb strings, noun stacks separated by `、`, paired abstractions joined by `与`, and repeated `不是 A 而是 B` structures must earn their place.
+## 通用规则
 
-Treat metaphor and anthropomorphism as possible sources of distortion. Keep a metaphor only when its mapping is precise, it shortens a harder literal explanation, and the surrounding text states the actual mechanism. For technical prose, prefer the named training data, objective, probability change, evaluator, or observed behavior. Do not say that a model “learned to act,” “saw the world,” or was told what counts as “done” when the claim can be stated directly.
+### 忠实于来源
 
-Do not extend one metaphor into a chain of corresponding objects merely to organize a paragraph or conclusion. Once the literal mechanism is clear, do not translate every later detail back into the metaphor. Check whether adjacent sections repeat the same setup, example, and summary shape; vary or remove that structure when the material does not require it.
+只有来源已经提供时，才能使用第一人称经历、情绪、现场、对话、个人判断或具体细节。不得为了显得真实而编造记忆、人物、事件、俚语或反问。作者的真实判断即使不够激烈、不够圆满，也应保留。
 
-Match emotional intensity to the source. Do not turn a result into fear, shock, relief, or revelation unless the author supplied that reaction. Avoid blanket bans on punctuation or individual words: they often move the same formula into a different sentence shape. Diagnose the claim and structure first.
+### 标明证据边界
 
-Use lists and tables when the reader must compare or retrieve exact items. Do not turn narrative prose into a disguised checklist.
+区分已核实事实、有依据的推断、假设风险和未决问题。具体数字、时间、角色、引语和权威归因必须能够追溯到来源。语气更自信、细节更多或措辞更权威，都不能替代证据。证据结束时应缩小结论。
 
-During the final pass:
+不要从一种写作现象直接推断训练原因，也不要根据句式、标点或词语判断作者身份。观察、因果解释和作者鉴定需要不同证据。限定语应指出具体缺口，不能靠泛泛的“可能不对”表演谨慎。
 
-1. Check every first-person or scene-like claim against the source.
-2. Find repeated sentence shapes and abstract nouns.
-3. Restore actors and actions only where known.
-4. Remove colloquial signals, rhetorical questions, and restatements that add mood but no fact.
-5. Replace decorative metaphors with the causal statement they were hiding.
-6. Compare neighboring headings and sections for repeated templates or metaphor chains.
-7. Trace concrete examples and authoritative-sounding claims to their sources.
-8. Confirm that the main conclusion has priority and that uncertainty is stated where evidence ends.
-9. Delete sentences whose only job is to explain the drafting process, section order, or inclusion decision.
-10. For product copy, verify that every line belongs inside the product rather than in a developer status report.
-11. Write one private dependency sentence for every heading: “This section is necessary because …” Move an evidence-backed independent section into its own artifact when that sentence cannot name a real causal or evidential dependency; delete it only when it has no standalone value.
-12. Check how often the subject changes. Do not let source evaluation, product commands, model training, system design, and market prediction become peer themes merely because they share a broad topic.
-13. Read the text aloud and revise engineered cadence.
+### 让全文只回答一个主问题
 
-Do not blindly replace flagged words, manufacture irregular sentence lengths, or perform humanity with slang and short sentences. Preserve technical accuracy and deliberate rhetoric.
+长文应有一个主问题、一个主要对象和一个主结论。每引入一个新概念，读者都会承担额外成本；只有前文的论证确实需要它时才引入。题材相同不能证明两组内容属于同一条论证。支持章节应按它们对主结论的重要性分配篇幅，不能平均展开。
+
+### 把标题组织成论证关系
+
+写作前，私下说明每一节回答什么问题、使用什么证据，以及主结论为什么需要这一节。两组章节如果各有独立问题、证据和结论，应拆成独立文章，不能靠过渡句制造连续性。
+
+拆分时保留有证据和独立结论的材料，把它移入另一篇稿件。只有重复、缺少依据、已经失效或用户明确同意删除的内容，才直接删除。
+
+### 让每段只有一个重心
+
+一段围绕一个有来源的动作、冲突、后果或决定展开。段落推进时，让主要对象始终可见。不要为了显得完整，把所有相关角度写成同等重要，也不要为了凑齐节奏增加第三项。
+
+### 让句子完成对象交接
+
+检查每句话的主体、动作和对象。句子更换行动者、时间、条件、业务阶段、分支或证据状态时，应准确说明前后关系。主语变化本身不要求连接词；时间条件已经说清关系时，不要再机械添加“然后”或“同时”。
+
+关键证据和结论不得依赖无法唯一回指的代词或抽象指代。所指不唯一、距离过远或隐藏了证据时，直接重复准确名词，并写出谁在什么条件下做了什么。准确重复的阅读成本低于含糊指代。
+
+### 要求每句话增加信息
+
+每句话至少增加一项有来源的事实、推断、关系、后果或决定。段尾如果只是用抽象名词给前文换一个说法，应直接删除。需要在段尾解决争议时，写出能够解决争议的具体行动者、条件、代码行为或结果。
+
+### 优先写清谁做了什么
+
+来源已经提供行动者和动作时，不要把它们压缩成抽象名词。能直接写出因果关系时，不用“能力”“机制”“路径”等宽泛词代替。缺少行动者证据时，不得自行补出一个角色。长句遮住主体、动作或句间关系时再拆分，不把句子更短本身当成目标。
+
+### 不把具体当成真实
+
+具体细节只有可追溯时才有价值。观点表现为有依据的优先级、取舍或拒绝，不表现为更强硬的语气。证据有限时，不制造争议，也不为文章补一个看似真实的故事。
+
+### 保持成品视角
+
+面向读者的正文不保留调研障碍、工具轨迹、章节预告、版本说明和措辞选择。只有当过程本身就是证据或文章主题时，例如研究方法、事故时间线和发布说明，过程才应保留。
+
+界面文案应描述用户可见的对象、状态、动作或结果，不解释开发者计划、实施理由或演示过程，也不保留智能体的完成汇报。
+
+### 让形式服从信息
+
+真实字段、接口契约、测试结果和需要检索的比较可以使用列表或表格。叙事正文不要伪装成检查清单。三个动词、顿号名词串、成对抽象概念、连续否定转折和统一段尾只有在结构本身承载信息或刻意修辞时才保留。
+
+不得使用词语或标点黑名单机械改稿。连接词、破折号、冒号和高频词本身不是问题；应检查它们是否表达真实关系，是否掩盖对象突变，或者是否只在制造完整感。
+
+### 限制比喻和拟人
+
+比喻只有在对应关系准确、比直述更短，而且附近已经写出真实机制时才保留。不得用拟人替代训练数据、目标、概率变化、评测规则或可观察行为。一个比喻不能扩张成整段映射，也不能在机制已经写清后再次承担总结。
+
+### 让语气强度来自原稿
+
+不得擅自增加震惊、恐惧、顿悟、亲密感、争议感或刻意口语。句子长短应随信息变化，不应通过短句、俚语和反问表演“像真人”。
+
+## 使用流程
+
+动笔前，先在内部确定：
+
+- 用户要求的体裁和实际主张。
+- 全文的主问题、主要对象和主结论。
+- 哪些内容属于事实、推断、假设或未决问题。
+
+依据这些决定完成初稿，不读取案例。随后只按通用规则进行一次自我批评：
+
+1. 检查来源忠实度和证据边界。
+2. 检查每一节是否为主结论所必需；有独立价值但不属于主线的内容应迁移，不应随意删除。
+3. 标出信息密集段落中每句的主体和对象，修复没有说明关系的行动者、阶段、分支或证据状态变化。
+4. 把关键句中含糊的指代还原成准确行动者和动作。
+5. 删除没有增加事实、推断、关系、后果或决定的句子。
+6. 删除无关元叙述、伪造人味、装饰性比喻和没有信息作用的对称结构。
+7. 对照相邻标题和段落，检查是否重复同一种模板或比喻链。
+8. 朗读全文，只在不改变事实和观点的前提下调整重复节奏。
+
+根据这次批评修改一遍。优先级第 1 至第 6 项已经满足，而且第 7 项没有明确妨碍阅读的问题时，就应停止。不能把“还可以更顺”当成继续修改的理由，也不能因为任务要求继续审校而制造新的缺陷。只有达到“读取顺序”规定的条件，才加载案例参考。
